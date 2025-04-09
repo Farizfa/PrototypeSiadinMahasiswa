@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <style>
+    .header-wrapper {
+      background-color: #ffffff;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    .badge-custom {
+      font-size: 0.85rem;
+      padding: 0.5rem 0.75rem;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .mobile-header {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .desktop-badge {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header-wrapper">
+    <!-- Mobile Header -->
+    <div class="header-top mobile-header">
+      <!-- Logo -->
+      <a href="/pages/dashboard/dashboard.html" class="d-flex align-items-center m-0 text-decoration-none gap-2">
+        <img src="/assets/img/logo.png" alt="SiAdin Logo" width="28" />
+        <strong class="text-dark">SiAdin Mahasiswa</strong>
+      </a>
+
+      <!-- Hamburger -->
+      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar"
+        aria-controls="mobileSidebar">
+        <i class="bi bi-list fs-3 text-primary"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Badge -->
+    <div class="mobile-header px-3 pb-3 text-muted small bg-white" style="margin-top: -0.75rem">
+      <span class="me-2">Sisa masa studi ideal</span>
+      <span class="badge rounded-pill bg-primary-subtle text-primary badge-custom">
+        1 tahun
+      </span>
+      <span class="badge rounded-pill bg-primary-subtle text-primary badge-custom">
+        5 bulan
+      </span>
+      <span class="badge rounded-pill bg-primary-subtle text-primary badge-custom">
+        24 hari
+      </span>
+    </div>
+
+    <!-- Desktop Badge -->
+    <div class="desktop-badge d-flex align-items-center gap-2 px-4 py-3 text-muted small">
+      <span>Sisa masa studi ideal</span>
+      <span class="badge rounded-pill bg-primary-subtle text-primary badge-custom">
+        1 tahun
+      </span>
+      <span class="badge rounded-pill bg-primary-subtle text-primary badge-custom">
+        5 bulan
+      </span>
+      <span class="badge rounded-pill bg-primary-subtle text-primary badge-custom">
+        24 hari
+      </span>
+    </div>
+  </div>
+</body>
+
+</html>

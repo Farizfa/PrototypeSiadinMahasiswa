@@ -1,0 +1,148 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  background-color: #f8f9fc;
+}
+
+.layout-wrapper {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar-container {
+  width: 250px;
+  flex-shrink: 0;
+  background-color: #fff;
+  border-right: 1px solid #dee2e6;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.dashboard-wrapper {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 0 0 1px #dee2e6;
+  }
+
+.header-container {
+  height: 60px;
+  flex-shrink: 0;
+  border-bottom: 1px solid #dee2e6;
+  background-color: #fff;
+  z-index: 1030;
+}
+
+.content-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+  background-color: #f8f9fc;
+}
+
+.footer-container {
+  flex-shrink: 0;
+  background-color: #fff;
+  border-top: 1px solid #dee2e6;
+}
+
+.offcanvas.offcanvas-start {
+  width: 250px;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.offcanvas-body {
+  overflow-y: auto;
+}
+
+.info-card {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  height: 100%;
+}
+
+.info-card i {
+  font-size: 1.5rem;
+  color: #1e3a8b;
+  margin-bottom: 0.5rem;
+}
+
+.profile-card,
+.calendar-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.pagination .page-link {
+  border: 1px solid #d1d5db;
+  color: #4b5563;
+  padding: 6px 12px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.pagination .page-link:hover {
+  background-color: #f0f4ff;
+  color: #1e3a8b;
+}
+
+.pagination .active .page-link {
+  background-color: #e7effd;
+  color: #1e3a8b;
+  border-color: #1e3a8b;
+  font-weight: 700;
+}
+
+.pagination .page-item:not(:last-child) .page-link {
+  margin-right: 6px;
+}
+
+.pagination .page-link:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar-container {
+    display: none;
+  }
+  .layout-wrapper {
+    flex-direction: column;
+  }
+  .header-container {
+    height: auto;
+  }
+  .main-content {
+    flex: 1;
+  }
+  .content-container {
+    padding: 1rem;
+  }
+}
+
+#mobile-sidebar-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-backdrop {
+  z-index: 1050 !important;
+}
+
+.modal {
+  z-index: 1060 !important;
+}

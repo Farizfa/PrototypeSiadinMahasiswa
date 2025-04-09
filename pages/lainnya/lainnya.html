@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Lainnya - SiAdin Mahasiswa</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/lainnya/styleLainnya.css" />
+</head>
+
+<body>
+  <div class="layout-wrapper">
+    <!-- Sidebar Desktop -->
+    <div id="sidebar-container" class="sidebar-container"></div>
+
+    <!-- Sidebar Mobile Offcanvas -->
+    <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="mobileSidebar"
+      aria-labelledby="mobileSidebarLabel" style="
+          height: 100vh;
+          min-height: 100vh;
+          width: 250px;
+          border-right: 1px solid #dee2e6;
+        ">
+      <div class="offcanvas-header">
+        <h5 id="mobileSidebarLabel" class="mb-0">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div id="mobile-sidebar-container"></div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Header -->
+      <div id="header-container" class="header-container"></div>
+
+      <!-- Content -->
+      <div class="content-container">
+        <div class="lainnya-wrapper">
+          <div class="container-fluid">
+            <!-- Tab nav -->
+            <ul class="nav nav-tabs mb-4" id="tab-menu">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" data-tab="eticket">E-Tiket KTM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-tab="dinus">Dinus Inside</a>
+              </li>
+            </ul>
+
+            <!-- Tab E-Tiket -->
+            <div id="tab-eticket">
+              <div class="row">
+                <!-- Kolom Kiri -->
+                <div class="col-lg-8 col-12 mb-3">
+                  <div class="section-box" style="
+                        background-color: #e9f7ef;
+                        border-left: 5px solid #28a745;
+                      ">
+                    <h5 class="fw-semibold mb-3">
+                      Syarat & Ketentuan Pengambilan KTM
+                    </h5>
+                    <ul class="small ps-3">
+                      <li>
+                        Koreksi Biodata Diri, Jika ada yang tidak benar atau
+                        kurang lengkap mohon untuk dilengkapi guna mendukung
+                        proses aktifitas akademik seperti [alamat rumah
+                        sebagai pengiriman informasi tagihan dsb]
+                      </li>
+                      <li>
+                        Upload File Ijazah yang terbagi dalam dua file yaitu
+                        file [ Ijazah tampak depan dan belakang ] [Format File
+                        .pdf]
+                      </li>
+                      <li>
+                        Upload File KTP tampak depan [Format file .pdf atau
+                        .jpg]
+                      </li>
+                      <li>
+                        Upload File Kartu Keluarga tampak depan [Format file
+                        .pdf]
+                      </li>
+                      <li>Ukuran File .pdf dan .jpg kurang dari 1MB</li>
+
+                      <li>
+                        Upload File Sertifikat Vaksin Covid-19 (terakhir)
+                        [Format file .pdf atau .jpg]
+                      </li>
+                      <li>
+                        Nama file Ijazah, KTP, Kartu Keluarga, dan Sertifikat
+                        Vaksin Covid-19 tidak boleh mengandung tanda baca
+                        titik (.) selain pada ekstensi dibelakang yaitu .pdf
+                      </li>
+                      <li>
+                        File yang diupload harus sesuai dengan ketentuan
+                        diatas jika tidak sesuai maka akan dianggap tidak
+                        valid
+                      </li>
+                      <li>
+                        Setelah Semua Dilengkapi akan muncul link download
+                        e-ticket KTM, silahkan dicetak utk pengambilan KTM di
+                        Biro Akademik (BIAK)
+                      </li>
+                      <li>Semua Mahasiswa wajib memiliki KTM</li>
+                      <li>
+                        Jika mendapat kesulitan dalam meng-update data bisa
+                        menghubungi bantuan@psi.dinus.ac.id
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="section-box" style="
+                        background-color: #e9f7ef;
+                        border-left: 5px solid #28a745;
+                      ">
+                    <h6 class="fw-semibold mb-2">
+                      Kelengkapan File Mahasiswa
+                    </h6>
+                    <p class="small mb-0">
+                      Jika ijasah belum keluar dari sekolah, silahkan upload
+                      surat keterangan lulus<br />
+                      Jika belum punya KTP, silahkan upload surat keterangan
+                      penduduk sementara<br />
+                      File tsb diatas wajib diupdate kembali dikemudian hari
+                      jika sudah memiliki file yang diminta (ijasah dan KTP)
+                      <br />
+                      Sertifikat Vaksin Covid-19 yang terakhir saja yang
+                      diupload (hanya 1) <br />
+                      Jika keterangan file disebelah kanan masih bertuliskan
+                      'sample' dan berwarna biru artinya file belum terupload,
+                      silahkan ulangi upload satu per satu sampai warnanya
+                      hijau
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Kolom Kanan -->
+                <div class="col-lg-4 col-12">
+                  <div class="section-box">
+                    <p class="small mb-2">
+                      Silahkan lengkapi data diri anda di menu
+                      <strong style="color: #1e3a8b">Biodata</strong>
+                      atau klik tautan berikut!
+                    </p>
+                    <a href="#" class="text-decoration-underline" style="color: #1e3a8b">Lengkapi Biodata</a>
+                  </div>
+
+                  <div class="section-box">
+                    <label class="form-label small">Nomor Seri KTM</label>
+                    <input type="text" class="form-control mb-2" placeholder="Masukkan nomor seri" />
+                    <small class="text-danger d-block mb-3">* Diisi setelah mendapatkan KTM dari BIAK</small>
+                    <div class="d-flex justify-content-end">
+                      <button class="btn btn-primary btn-sm" style="background-color: #1e3a8b">
+                        Simpan
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="section-box">
+                    <p class="small mb-2">
+                      <strong>Tiket Pengambilan KTM</strong><br />
+                      Pengambilan KTM ke Biro Akademik Udinus gd A lt 1
+                    </p>
+                    <a href="#" class="btn btn-outline-primary btn-sm" style="border: none; color: inherit">
+                      Unduh Tiket <i class="bi bi-download ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Dinus Inside -->
+            <div id="tab-dinus" class="d-none">
+              <div
+                class="card-body bg-warning-subtle d-flex align-items-center justify-content-center gap-2 p-3 rounded text-center">
+                <i class="bi bi-exclamation-triangle-fill text-danger fs-5"></i>
+                <p class="mb-0 small fw-semibold text-dark">
+                  Belum mendapatkan sertifikat Dinus Inside. Silahkan mengikuti
+                  Dinus Inside
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer-container" class="footer-container"></div>
+    </div>
+  </div>
+
+  <!-- Modal Logout -->
+  <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 p-3 w-100" style="max-width: 420px">
+        <div class="modal-body text-center">
+          <h5 id="logoutModalLabel" class="fw-bold">Konfirmasi Keluar</h5>
+          <p class="mb-4">Anda yakin ingin keluar?</p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <button type="button" class="btn px-4" id="btn-logout-yes" style="background-color: #1e3a8b; color: white"
+              onclick="window.location.href = '../../index.html'">
+              Ya
+            </button>
+            <button type="button" class="btn btn-danger px-4" data-bs-dismiss="modal">
+              Tidak
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    async function loadComponent(id, path) {
+      const res = await fetch(path);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+
+      if (id === "sidebar-container" || id === "mobile-sidebar-container") {
+        const links = document.querySelectorAll("#" + id + " .nav-link");
+        links.forEach((link) => {
+          if (link.href === window.location.href) {
+            link.classList.add("active", "bg-primary-subtle", "text-primary");
+          }
+        });
+      }
+
+      if (id === "mobile-sidebar-container") {
+        const mobileSidebarInstance =
+          bootstrap.Offcanvas.getOrCreateInstance("#mobileSidebar");
+
+        const modalEl = document.getElementById("logoutModal");
+        if (!modalEl) {
+          console.warn("Modal tidak ditemukan di DOM utama!");
+          return;
+        }
+
+        const logoutModal = new bootstrap.Modal(modalEl, {
+          backdrop: "static",
+          keyboard: false,
+        });
+
+        document
+          .querySelector("#mobile-sidebar-container")
+          .addEventListener("click", (e) => {
+            const btn = e.target.closest("#btn-logout-mobile");
+            if (!btn) return;
+
+            e.preventDefault();
+            mobileSidebarInstance.hide();
+
+            setTimeout(() => {
+              logoutModal.show();
+            }, 400);
+          });
+      }
+    }
+
+    function handleBackButton(event) {
+      if (!window.location.pathname.includes('dashboard.html') &&
+        !window.location.pathname.endsWith('/dashboard/')) {
+        event.preventDefault();
+
+        window.location.href = '../dashboard/dashboard.html';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      window.history.pushState(null, null, window.location.pathname);
+
+      window.addEventListener('popstate', handleBackButton);
+    });
+
+    window.addEventListener('beforeunload', function () {
+      window.removeEventListener('popstate', handleBackButton);
+    });
+
+    document.querySelectorAll("#tab-menu .nav-link").forEach((tab) => {
+      tab.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        document
+          .querySelectorAll("#tab-menu .nav-link")
+          .forEach((t) => t.classList.remove("active"));
+
+        this.classList.add("active");
+
+        document.getElementById("tab-eticket").classList.add("d-none");
+        document.getElementById("tab-dinus").classList.add("d-none");
+
+        if (this.dataset.tab === "eticket") {
+          document.getElementById("tab-eticket").classList.remove("d-none");
+        } else {
+          document.getElementById("tab-dinus").classList.remove("d-none");
+        }
+      });
+    });
+
+    loadComponent("header-container", "/header/header.html");
+    loadComponent("sidebar-container", "/sidebar/sidebar.html");
+    loadComponent("mobile-sidebar-container", "/sidebar/sidebar.html");
+    loadComponent("footer-container", "/footer/footer.html");
+  </script>
+</body>
+
+</html>

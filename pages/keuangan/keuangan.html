@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keuangan - SiAdin Mahasiswa</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/keuangan/styleKeuangan.css" />
+</head>
+
+<body>
+  <div class="layout-wrapper">
+    <!-- Sidebar Desktop-->
+    <div id="sidebar-container" class="sidebar-wrapper border-end bg-white"></div>
+
+    <!-- Sidebar Mobile Offcanvas -->
+    <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="mobileSidebar"
+      aria-labelledby="mobileSidebarLabel" style="
+          height: 100vh;
+          min-height: 100vh;
+          width: 250px;
+          border-right: 1px solid #dee2e6;
+        ">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileSidebarLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div id="mobile-sidebar-container"></div>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content w-100">
+      <!-- Header -->
+      <div id="header-container" class="header-wrapper"></div>
+
+      <!-- Content -->
+      <div class="content-wrapper">
+        <div class="keuangan-wrapper">
+          <h5 class="mb-4 fw-semibold">Keuangan</h5>
+
+          <!-- Tab nav -->
+          <ul class="nav nav-tabs mb-4" id="tab-menu">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" data-tab="tagihan">Tagihan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-tab="nonperiodik">Tagihan Non-Periodik</a>
+            </li>
+          </ul>
+
+          <!-- Tab Tagihan -->
+          <div id="tab-tagihan" style="margin-top: 1.5rem">
+            <div class="row mb-4">
+              <!-- Informasi -->
+              <div class="col-lg-6 mb-3">
+                <h6 class="fw-semibold text-secondary mb-3">Informasi</h6>
+                <div class="card-border">
+                  <p class="mb-1" style="color: #1e3a8b; font-weight: 600">
+                    Tagihan Periode Awal Semester 2024-2025 Ganjil
+                  </p>
+                  <h3 class="fw-semibold">
+                    Kawaya Simanjuntak - A11.2022.12345
+                  </h3>
+                  <table class="table table-borderless mt-3 mb-2">
+                    <thead>
+                      <tr class="text-secondary">
+                        <th style="color: #667085; font-weight: 400">
+                          Tagihan
+                        </th>
+                        <th style="color: #667085; font-weight: 400">
+                          Sekarang
+                        </th>
+                        <th style="color: #667085; font-weight: 400">Lalu</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="font-weight: 600">
+                        <td>Gedung</td>
+                        <td>Rp 0,00</td>
+                        <td>Rp 0,00</td>
+                      </tr>
+                      <tr style="font-weight: 600">
+                        <td>SPP</td>
+                        <td>Rp 2.250.000,00</td>
+                        <td>Rp 0,00</td>
+                      </tr>
+                      <tr style="font-weight: 600">
+                        <td>Poliklinik</td>
+                        <td>Rp 250.000,00</td>
+                        <td>Rp 0,00</td>
+                      </tr>
+                      <tr style="font-weight: 600">
+                        <td>SKS</td>
+                        <td>Rp 0,00</td>
+                        <td>Rp 0,00</td>
+                      </tr>
+                      <tr style="font-weight: 600">
+                        <td>Modul</td>
+                        <td>Rp 0,00</td>
+                        <td>Rp 0,00</td>
+                      </tr>
+                      <tr style="font-weight: 600">
+                        <td>BK</td>
+                        <td>Rp 0,00</td>
+                        <td>Rp 0,00</td>
+                      </tr>
+                      <tr style="font-weight: 600">
+                        <td>Total Kewajiban</td>
+                        <td colspan="2">Rp 2.500.000,00</td>
+                      </tr>
+                      <tr style="font-weight: 600">
+                        <td>Total Tagihan</td>
+                        <td colspan="2">Rp 2.500.000,00</td>
+                      </tr>
+                      <tr style="font-weight: 600">
+                        <td>Dibayar</td>
+                        <td colspan="2">Rp 0,00</td>
+                      </tr>
+
+                      <tr style="font-weight: 600">
+                        <td style="color: #e50c00">Sisa Belum Terbayar</td>
+                        <td colspan="2" style="color: #e50c00">
+                          Rp 2.500.000,00
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="d-flex justify-content-between mt-4">
+                    <small style="font-weight: 600">Status Pembayaran UTS 2024-2025 Genap</small>
+                    <span class="badge" style="
+                          background-color: #f5cecf;
+                          color: #e50c00;
+                          padding: 0.5rem 1.25rem;
+                          font-weight: 600;
+                        ">
+                      Belum Lunas
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Metode Pembayaran -->
+              <div class="col-lg-6 mb-3">
+                <h6 class="fw-semibold text-secondary mb-3">
+                  Metode Pembayaran
+                </h6>
+                <div class="card-border">
+                  <div class="mb-4">
+                    <p class="mb-0 text-dark fw-semibold">
+                      BCA Virtual Account
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <small class="text-secondary">Auto Validasi</small>
+                      <button class="btn btn-warning btn-sm" style="
+                            background-color: #ffd21f;
+                            border-color: #ffd21f;
+                            text-decoration: underline;
+                            font-style: italic;
+                          ">
+                        Lihat Tutorial Transaksi
+                      </button>
+                    </div>
+                    <p class="mb-0 fw-semibold">13002 111 22 12345</p>
+                    <p class="mb-1 fw-normal">Kawaya Simanjuntak</p>
+                  </div>
+
+                  <hr class="my-3" />
+
+                  <div class="mb-4">
+                    <p class="mb-0 text-dark fw-semibold">
+                      Bank Jateng Virtual Account
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <small class="text-secondary">Auto Validasi</small>
+                      <button class="btn btn-warning btn-sm" style="
+                            background-color: #ffd21f;
+                            border-color: #ffd21f;
+                            text-decoration: underline;
+                            font-style: italic;
+                          ">
+                        Lihat Tutorial Transaksi
+                      </button>
+                    </div>
+                    <p class="mb-0 fw-semibold">(0103) 111 22 12345</p>
+                    <p class="mb-1 fw-normal">Kawaya Simanjuntak</p>
+                  </div>
+
+                  <hr class="my-3" />
+
+                  <div>
+                    <p class="mb-0 text-dark fw-semibold">Mandiri</p>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <small class="text-secondary">Auto Validasi</small>
+                      <button class="btn btn-warning btn-sm" style="
+                            background-color: #ffd21f;
+                            border-color: #ffd21f;
+                            text-decoration: underline;
+                            font-style: italic;
+                          ">
+                        Lihat Tutorial Transaksi
+                      </button>
+                    </div>
+                    <p class="mb-0 fw-semibold">88864 111 22 12345</p>
+                    <p class="mb-1 fw-normal">Kawaya Simanjuntak</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Catatan -->
+            <h6 class="fw-semibold text-secondary">Catatan</h6>
+            <div class="col-lg-6">
+              <div class="card-border" style="background-color: #f2f4f5; color: #667085">
+                <small>
+                  Tidak Wajib Konfirmasi karena otomatis terupdate 1x24
+                  jam.<br />
+                  Pembayaran kuliah reguler hanya dapat dijalankan menggunakan
+                  metode pembayaran di atas.<br />
+                  Kontak Pelayanan BIKU UDINUS:<br />
+                  Nomor WA: +62 811-2685-577<br />
+                  Website: informasi-biku.dinus.ac.id<br />
+                  Jam Pelayanan: 09.00 - 15.00
+                </small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Non Periodik -->
+          <div id="tab-nonperiodik" class="d-none">
+            <h6 class="fw-semibold text-secondary mb-3">Informasi</h6>
+            <div class="d-flex justify-content-center align-items-center" style="
+                  background-color: #e7effd;
+                  padding: 1rem;
+                  border-radius: 10px;
+                  color: #000;
+                  font-weight: 600;
+                ">
+              <i class="bi bi-person-fill me-2" style="color: #1e3a8b"></i>
+              Belum Ada Tagihan Non Periodik!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer-container" class="footer-container"></div>
+    </div>
+  </div>
+
+  <!-- Modal Logout -->
+  <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 p-3 w-100" style="max-width: 420px">
+        <div class="modal-body text-center">
+          <h5 id="logoutModalLabel" class="fw-bold">Konfirmasi Keluar</h5>
+          <p class="mb-4">Anda yakin ingin keluar?</p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <button type="button" class="btn px-4" id="btn-logout-yes" style="background-color: #1e3a8b; color: white"
+              onclick="window.location.href = '../../index.html'">
+              Ya
+            </button>
+            <button type="button" class="btn btn-danger px-4" data-bs-dismiss="modal">
+              Tidak
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    async function loadComponent(id, path) {
+      const res = await fetch(path);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+
+      if (id === "sidebar-container" || id === "mobile-sidebar-container") {
+        const links = document.querySelectorAll("#" + id + " .nav-link");
+        links.forEach((link) => {
+          if (link.href === window.location.href) {
+            link.classList.add("active", "bg-primary-subtle", "text-primary");
+          }
+        });
+      }
+
+      if (id === "mobile-sidebar-container") {
+        const mobileSidebarInstance =
+          bootstrap.Offcanvas.getOrCreateInstance("#mobileSidebar");
+
+        const modalEl = document.getElementById("logoutModal");
+        if (!modalEl) {
+          console.warn("Modal tidak ditemukan di DOM utama!");
+          return;
+        }
+
+        const logoutModal = new bootstrap.Modal(modalEl, {
+          backdrop: "static",
+          keyboard: false,
+        });
+
+        document
+          .querySelector("#mobile-sidebar-container")
+          .addEventListener("click", (e) => {
+            const btn = e.target.closest("#btn-logout-mobile");
+            if (!btn) return;
+
+            e.preventDefault();
+            mobileSidebarInstance.hide();
+
+            setTimeout(() => {
+              logoutModal.show();
+            }, 400);
+          });
+      }
+    }
+
+    function handleBackButton(event) {
+      if (!window.location.pathname.includes('dashboard.html') &&
+        !window.location.pathname.endsWith('/dashboard/')) {
+        event.preventDefault();
+
+        window.location.href = '../dashboard/dashboard.html';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      window.history.pushState(null, null, window.location.pathname);
+
+      window.addEventListener('popstate', handleBackButton);
+    });
+
+    window.addEventListener('beforeunload', function () {
+      window.removeEventListener('popstate', handleBackButton);
+    });
+
+    document.querySelectorAll("#tab-menu .nav-link").forEach((tab) => {
+      tab.addEventListener("click", function (e) {
+        e.preventDefault();
+        document
+          .querySelectorAll("#tab-menu .nav-link")
+          .forEach((t) => t.classList.remove("active"));
+        this.classList.add("active");
+        const selectedTab = this.getAttribute("data-tab");
+        document.getElementById("tab-tagihan").classList.add("d-none");
+        document.getElementById("tab-nonperiodik").classList.add("d-none");
+        document
+          .getElementById(`tab-${selectedTab}`)
+          .classList.remove("d-none");
+      });
+    });
+
+    loadComponent("sidebar-container", "/sidebar/sidebar.html");
+    loadComponent("mobile-sidebar-container", "/sidebar/sidebar.html");
+    loadComponent("header-container", "/header/header.html");
+    loadComponent("footer-container", "/footer/footer.html");
+  </script>
+</body>
+
+</html>
