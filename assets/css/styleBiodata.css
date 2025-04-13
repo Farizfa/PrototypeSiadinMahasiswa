@@ -1,3 +1,4 @@
+
 html,
 body {
   margin: 0;
@@ -40,7 +41,7 @@ body {
   z-index: 1030;
 }
 
-.keuangan-wrapper {
+.biodata-wrapper {
   background-color: #ffffff;
   border-radius: 12px;
   padding: 1.5rem;
@@ -54,35 +55,17 @@ body {
   background-color: #f8f9fc;
 }
 
-.nav-link {
-  font-size: 0.95rem;
-  transition: background-color 0.2s, color 0.2s;
-  padding: 10px 12px;
-  border-radius: 8px;
-}
-
-.nav-link:hover {
-  background-color: #f1f3f5;
-}
-
-.nav-link.active {
-  background-color: #e7f1ff !important;
-  color: #0d6efd !important;
-  font-weight: 500;
-}
-
-.card-border {
-  border: 1px solid #dee2e6;
-  border-radius: 10px;
-  padding: 1rem;
+.footer-container {
+  flex-shrink: 0;
   background-color: #fff;
+  border-top: 1px solid #dee2e6;
 }
 
-#tab-menu {
+#biodataTabs {
   border-bottom: none;
 }
 
-#tab-menu .nav-link {
+#biodataTabs .nav-link {
   color: #6c757d;
   font-weight: 500;
   border: none;
@@ -91,14 +74,14 @@ body {
   padding: 0.25rem 0.5rem;
 }
 
-#tab-menu .nav-link.active {
+#biodataTabs .nav-link.active {
   color: #1e3a8b !important;
   font-weight: 600;
   background-color: transparent !important;
   box-shadow: none;
 }
 
-#tab-menu .nav-link.active::after {
+#biodataTabs .nav-link.active::after {
   content: "";
   display: block;
   height: 2px;
@@ -130,6 +113,37 @@ body {
   .content-wrapper {
     padding: 1rem;
   }
+
+  #biodataTabs {
+    padding-bottom: 0.5rem;
+  }
+}
+
+
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .sidebar {
+    width: 30%;
+  }
+  
+  .main-content {
+    margin-left: 30%;
+    width: 70%;
+  }
+  
+  .card {
+    width: 100%;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+    width: 100%;
+  }
 }
 
 .offcanvas.offcanvas-start {
@@ -140,12 +154,6 @@ body {
 
 .offcanvas-body {
   overflow-y: auto;
-}
-
-.footer-container {
-  flex-shrink: 0;
-  background-color: #fff;
-  border-top: 1px solid #dee2e6;
 }
 
 #mobile-sidebar-container {

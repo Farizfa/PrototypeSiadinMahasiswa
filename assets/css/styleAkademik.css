@@ -97,6 +97,33 @@
   }
 }
 
+
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .sidebar {
+    width: 30%;
+  }
+  
+  .main-content {
+    margin-left: 30%;
+    width: 70%;
+  }
+  
+  .card {
+    width: 100%;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+    width: 100%;
+  }
+}
+
 .offcanvas.offcanvas-start {
   width: 250px;
   max-width: 100%;

@@ -25,6 +25,13 @@ body {
   height: 100vh;
 }
 
+.header-wrapper {
+  height: 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dee2e6;
+  flex-shrink: 0;
+}
+
 .header-container {
   height: 60px;
   flex-shrink: 0;
@@ -33,11 +40,11 @@ body {
   z-index: 1030;
 }
 
-.header-wrapper {
-  height: 60px;
+.keuangan-wrapper {
   background-color: #ffffff;
-  border-bottom: 1px solid #dee2e6;
-  flex-shrink: 0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 0 1px #dee2e6;
 }
 
 .content-wrapper {
@@ -69,13 +76,6 @@ body {
   border-radius: 10px;
   padding: 1rem;
   background-color: #fff;
-}
-
-.dokumen-wrapper {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 0 0 1px #dee2e6;
 }
 
 #tab-menu {
@@ -132,10 +132,31 @@ body {
   }
 }
 
-.footer-container {
-  flex-shrink: 0;
-  background-color: #fff;
-  border-top: 1px solid #dee2e6;
+
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .sidebar {
+    width: 30%;
+  }
+  
+  .main-content {
+    margin-left: 30%;
+    width: 70%;
+  }
+  
+  .card {
+    width: 100%;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+    width: 100%;
+  }
 }
 
 .offcanvas.offcanvas-start {
@@ -146,6 +167,12 @@ body {
 
 .offcanvas-body {
   overflow-y: auto;
+}
+
+.footer-container {
+  flex-shrink: 0;
+  background-color: #fff;
+  border-top: 1px solid #dee2e6;
 }
 
 #mobile-sidebar-container {
